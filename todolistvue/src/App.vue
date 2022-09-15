@@ -35,9 +35,7 @@ export default {
       })
     },
     removeTodo(todoId){
-      this.todos = this.todos.filter(todo => {
-				return todo.id != todoId
-			})
+      this.todos = this.todos.filter(todo => todo.id != todoId)
     }
   }
 }
