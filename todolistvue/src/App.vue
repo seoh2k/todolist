@@ -1,7 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <TodoInput name="TO-DO" @add-to-do="addTodo" />
-  <TodoList :todos="todos"/>
+  <h1>TO-DO</h1>
+  <TodoInput @add-to-do="addTodo" />
+  <TodoList :todos="todos" @remove-todo="removeTodo"/>
 </template>
 
 <script>
@@ -32,6 +33,11 @@ export default {
         id: nextTodoId++,
         text: content
       })
+    },
+    removeTodo(todoId){
+      this.todos = this.todos.filter(todo => {
+				return todo.id != todoId
+			})
     }
   }
 }

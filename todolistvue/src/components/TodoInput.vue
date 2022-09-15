@@ -1,6 +1,5 @@
 <template>
   <div id="todoInput">
-    <h1>{{ name }}</h1>
     <input type="text" v-model="content" @keyup.enter="addTodo"/>
   </div>
 </template>
