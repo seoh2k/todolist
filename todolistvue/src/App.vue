@@ -17,7 +17,7 @@ export default {
     TodoInput,
     TodoList
   },
-  data(){
+  data(){ // 필요한 어떤 종류의 변수라도 저장할 수 있는 각 컴포넌트의 private 메모리
     return {
       todos: [
         {

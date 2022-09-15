@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'TodoList',
-  props: {
+  props: { // 부모 컴포넌트로부터 자식 컴포넌트로 전달하는 방법
     todos: []
   }
 }
